@@ -96,7 +96,7 @@ def save_sheet(df_min, df_max, df_mean, df_10):
     # 차트 그리기
     line_val = Reference(ws, min_row = 1, max_row = 4, min_col = 3, max_col = 3)   # 해당 구역 참조
     line_category = Reference(ws, min_row = 2, max_row = 5, min_col = 1, max_col = 1) # category 참조
-    line_chart = LineChart() # Bar 차트로 만들기
+    line_chart = LineChart() # Line 차트로 만들기
     line_chart.add_data(line_val, titles_from_data = True)   # titles_from_data = True : 계열 이름 O
     # line_chart.title = 'Summary'   # 차트 제목
     line_chart.y_axis.title = 'Value'    # Y 축 제목
